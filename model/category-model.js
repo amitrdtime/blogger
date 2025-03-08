@@ -4,7 +4,7 @@ const getCatDetails = async () => {
   try {
     //const categories = await Category.find();
     const categories = await Category.find()
-    .populate('posts', '_id title description');
+    //.populate('posts', '_id title description');
     
     console.log('All Categories:', categories);
     return categories;
