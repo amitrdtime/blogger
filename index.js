@@ -23,6 +23,9 @@ dbConnection()
         const postrouter = require('./routers/post');
         app.use('/post', postrouter);
 
+        const userrouter = require('./routers/users');
+        app.use('/users', userrouter);
+
         app.listen(3000, () => {
           console.log(`Example app listening on port 3000`);
         });
